@@ -1,0 +1,114 @@
+<style>
+
+  /* HEADER */
+  header {
+    background: #8c8c8c;
+    padding-top: 50px;
+    text-align: left;
+    margin-top: -40px;
+  }
+
+  /* NAVBAR */
+  div.topnav {
+    overflow: hidden;
+    justify-content: space-between;
+  }
+  div.topnav a{
+    float: right;
+    color: hsla(0, 0%, 100%, 0.86);
+    text-decoration: none;
+    font-size: 17px;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px 60px;
+    max-width: 700px
+  }
+  div.topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* Background to body */
+  body {
+    background-color: #f2f2f2;
+  }
+
+  div#China h1 {
+    text-align: center;
+    color: 	#008B8B;
+    font-size: 50px;
+    padding-top: 30px;
+  }
+
+  div#categories {
+    padding-left: 70px;
+  }
+
+  /* Title */
+  div#Brazil h1 {
+    text-align: center;
+    color: 	#008B8B;
+    font-size: 50px;
+    padding-top: 30px;
+  }
+
+  /* Images */
+  img#classics {
+    float: left;
+    width: 200px;
+    height: 230px;
+  }
+
+  img#jiaozi {
+    float: left;
+    width: 200px;
+    height: 200px;
+  }
+
+  img#teng {
+    float: left;
+    width: 200px;
+    height: 250px;
+  }
+
+  /* spacing between the sections */
+  div#goodfood {
+    padding-top: 30px;
+  }
+
+  div#singers {
+    padding-top: 30px;
+  }
+
+  /* paragraph and header styles */
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 15px;
+    padding-top: 30px;
+    padding-left: 250px;
+    width: 850px;
+  }
+
+  /* submit here button */
+  div#chinabutton {
+    padding-top: 30px;
+    padding-right: 142px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  /* Social media icons */
+  div.socialmedia {
+    padding-top: 75px;
+    align-items: center;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+
+</style>

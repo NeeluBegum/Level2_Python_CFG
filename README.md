@@ -2,3 +2,6 @@
 
 Code First Girls - Level 2
 This is a project I am undertaking while learning back end of web development with python. 
+
+
+This is my webdevelopment project using python

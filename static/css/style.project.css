@@ -30,7 +30,7 @@ body {
   background-color: #f2f2f2;
 }
 
-div#China h1 {
+div#LEARN h1 {
   text-align: center;
   color: 	#008B8B;
   font-size: 50px;
@@ -52,8 +52,6 @@ div#Brazil h1 {
 /* Images */
 img#classics {
   float: left;
-  width: 700px;
-  height: 700px;
 }
 
 img#jiaozi {

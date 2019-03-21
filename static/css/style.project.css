@@ -1,6 +1,4 @@
-body {
-  color: grey
-}
+
   /* HEADER */
   header {
     background: #8c8c8c;
@@ -56,19 +54,16 @@ body {
   /* Images */
   img#classics {
     float: left;
-    width: 200px;
     height: 230px;
   }
 
   img#jiaozi {
     float: left;
-    width: 200px;
     height: 200px;
   }
 
   img#teng {
     float: left;
-    width: 200px;
     height: 250px;
   }
 

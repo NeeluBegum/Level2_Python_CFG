@@ -12,7 +12,7 @@ div.topnav {
 }
 div.topnav a{
   float: left;
-  color: hsl(0°, 0%, 52%);
+  color: hsla(360, 100%, 100%, 0.5);
   text-decoration: none;
   font-size: 17px;
   justify-content: space-between;
@@ -21,7 +21,7 @@ div.topnav a{
   max-width: 700px
 }
 div.topnav a:hover {
-  background-color: white;
+  background-color: grey;
   color: black;
 }
 

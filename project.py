@@ -5,7 +5,7 @@ app = Flask("MyApp")
 
 @app.route("/")
 def hello():
-   return "Hello NEELU"
+   return "Hello ››"
 @app.route("/<name>")
 def hellostranger(name):
    return render_template("info.html", name = name.title())
@@ -15,7 +15,7 @@ def sign_up():
     form_data = request.form
     print form_data["email"]
     send_simple_message(form_data["email"], form_data["company"])
-    return "All OK"
+    return "Please check your email, we have sent you more information"
 
 def send_simple_message(mail, company): #defines method
    return requests.post(

@@ -8,7 +8,7 @@ def hello():
    return "Hello NEELU"
 @app.route("/<name>")
 def hellostranger(name):
-   return render_template("project.html", name = name.title())
+   return render_template("info.html", name = name.title())
 
 @app.route("/signup", methods=["POST"])
 def sign_up():

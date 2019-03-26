@@ -1,5 +1,5 @@
 header {
-  background: #8c8c8c;
+  background: #301e1e;
   padding-top: 50px;
   text-align: left;
   margin-top: -40px;
@@ -11,7 +11,7 @@ div.topnav {
   justify-content: space-between;
 }
 div.topnav a{
-  float: right;
+  float: left;
   color: hsla(0, 0%, 100%, 0.86);
   text-decoration: none;
   font-size: 17px;

@@ -27,5 +27,5 @@ def send_simple_message(mail, company): #defines method
              "text": "Here is more information!"})
 
 # send_simple_message() #just to call method
-
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)

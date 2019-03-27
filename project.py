@@ -56,13 +56,16 @@ def myTweetMethod():
     for tweet in cfg_tweets:
       print(tweet.user.name + ":" + tweet.text +"\n")
 
-    return rhc_tweets[0].text
+    return rhc_tweets[:3], cfg_tweets[:3]
 
 
 @app.route("/tweet")
 def hellostranger4():
-    firstTweet = myTweetMethod()
-    return render_template("tweet.html", name = firstTweet)
+    firstTweet, secondTweet = myTweetMethod()
+    tweets = []
+    tweets.append(firstTweet)
+    tweets.append(secondTweet)
+    return render_template("tweet.html", tweets = tweets)
 
 # send_simple_message() #just to call method
 if __name__ == '__main__':

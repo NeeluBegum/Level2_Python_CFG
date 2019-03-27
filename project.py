@@ -60,7 +60,7 @@ def myTweetMethod():
 
 
 @app.route("/tweet")
-def hellostranger1():
+def hellostranger4():
     firstTweet = myTweetMethod()
     return render_template("tweet.html", name = firstTweet)
 

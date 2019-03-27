@@ -7,8 +7,16 @@ app = Flask("MyApp")
 def hello():
    return "Hello ››"
 @app.route("/<name>")
-def hellostranger(name):
-   return render_template("info.html", name = name.title())
+def hellostranger1(name):
+   return render_template("project.html", name = name.title())
+
+@app.route("/project")
+def hellostranger2():
+   return render_template("project.html")
+
+@app.route("/getinfo")
+def hellostranger3():
+   return render_template("info.html")
 
 @app.route("/signup", methods=["POST"])
 def sign_up():

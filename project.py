@@ -58,6 +58,7 @@ def myTweetMethod():
 
     return rhc_tweets[:3], cfg_tweets[:3]
 
+
 @app.route("/tweet")
 def hellostranger4():
     firstTweet, secondTweet = myTweetMethod()

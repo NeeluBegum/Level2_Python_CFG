@@ -35,18 +35,35 @@ def send_simple_message(mail, company): #defines method
              "subject": "Info about {}".format(company),
              "text": "Here is more information!"})
 
-#twitter apps
-auth=tweepy.OAuthHandler("Zi0zR6Y3kw2ly98wE7majMb55","9bA2086tHojvAUQL4EzMhMPnv3Wr4Lsnc6LbjyR8KaJY7btphB")
-auth.set_access_token("1011888746009067520-CEER93u9rCyHTe3Vu5BOiu13g7pXiT","sZU3fium2Lk9xS13T50uW0psFOxb97KuvyHqwnGuTYKoN")
 
-twitter_api=tweepy.API(auth)
+def myTweetMethod():
+    #twitter apps
+    auth=tweepy.OAuthHandler("Zi0zR6Y3kw2ly98wE7majMb55","9bA2086tHojvAUQL4EzMhMPnv3Wr4Lsnc6LbjyR8KaJY7btphB")
+    auth.set_access_token("1011888746009067520-CEER93u9rCyHTe3Vu5BOiu13g7pXiT","sZU3fium2Lk9xS13T50uW0psFOxb97KuvyHqwnGuTYKoN")
 
-cfg_tweets=twitter_api.search(
-  q="CodeFirstGirls"
-)
+    twitter_api=tweepy.API(auth)
 
-for tweet in cfg_tweets:
-  print(tweet.user.name + ":" + tweet.text +"\n")
+    cfg_tweets=twitter_api.search(
+    q="CodeFirstGirls"
+    )
+    rhc_tweets=twitter_api.search(
+    q="ResearcHersCode"
+    )
+
+    for tweet in rhc_tweets:
+      print(tweet.user.name + ":" + tweet.text +"\n")
+
+    for tweet in cfg_tweets:
+      print(tweet.user.name + ":" + tweet.text +"\n")
+
+
+     return rhc_tweets[0].text
+
+
+@app.route("/tweet")
+def hellostranger1():
+    firstTweet = myTweetMethod()
+   return render_template("tweet.html", name = firstTweet)
 
 # send_simple_message() #just to call method
 if __name__ == '__main__':

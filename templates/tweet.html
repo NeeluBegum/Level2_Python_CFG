@@ -7,7 +7,9 @@
 <body>
 <p>Check out the tweets below for CodeFirstGirlsFG</p>
 
-<p> {{tweets[0]}}  </p>
+{% for tweet in tweets[0] %}
+
+<p> {{tweet.user.name}}  </p>
 
 <p>Check out the tweets below for ResearcHersCode</p>
 

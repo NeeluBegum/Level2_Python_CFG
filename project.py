@@ -56,7 +56,7 @@ def myTweetMethod():
     for tweet in cfg_tweets:
       print(tweet.user.name + ":" + tweet.text +"\n")
 
-    return rhc_tweets[:3], cfg_tweets[:3]
+    return rhc_tweets[:1], cfg_tweets[:1]
 
 
 @app.route("/tweet")

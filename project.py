@@ -1,5 +1,6 @@
 import requests
 from flask import Flask, render_template, request
+import tweepy
 
 app = Flask("MyApp")
 
@@ -33,6 +34,19 @@ def send_simple_message(mail, company): #defines method
              "to": [mail],
              "subject": "Info about {}".format(company),
              "text": "Here is more information!"})
+
+#twitter apps
+auth=tweepy.OAuthHandler("Zi0zR6Y3kw2ly98wE7majMb55","9bA2086tHojvAUQL4EzMhMPnv3Wr4Lsnc6LbjyR8KaJY7btphB")
+auth.set_access_token("1011888746009067520-CEER93u9rCyHTe3Vu5BOiu13g7pXiT","sZU3fium2Lk9xS13T50uW0psFOxb97KuvyHqwnGuTYKoN")
+
+twitter_api=tweepy.API(auth)
+
+cfg_tweets=twitter_api.search(
+  q="CodeFirstGirls"
+)
+
+for tweet in cfg_tweets:
+  print tweet.user.name + ":" + tweet.text +"\n"
 
 # send_simple_message() #just to call method
 if __name__ == '__main__':

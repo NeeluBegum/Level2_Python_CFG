@@ -62,7 +62,7 @@ def myTweetMethod():
 @app.route("/tweet")
 def hellostranger1():
     firstTweet = myTweetMethod()
-   return render_template("tweet.html", name = firstTweet)
+    return render_template("tweet.html", name = firstTweet)
 
 # send_simple_message() #just to call method
 if __name__ == '__main__':

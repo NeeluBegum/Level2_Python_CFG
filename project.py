@@ -13,7 +13,7 @@ def hellostranger(name):
 @app.route("/signup", methods=["POST"])
 def sign_up():
     form_data = request.form
-    print form_data["email"]
+    print(form_data["email"])
     send_simple_message(form_data["email"], form_data["company"])
     return "Please check your email, we have sent you more information"
 

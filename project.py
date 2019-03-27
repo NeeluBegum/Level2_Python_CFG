@@ -50,12 +50,6 @@ def myTweetMethod():
     q="ResearcHersCode"
     )
 
-    for tweet in rhc_tweets:
-      print(tweet.user.name + ":" + tweet.text +"\n")
-
-    for tweet in cfg_tweets:
-      print(tweet.user.name + ":" + tweet.text +"\n")
-
     return rhc_tweets[:3], cfg_tweets[:3]
 
 

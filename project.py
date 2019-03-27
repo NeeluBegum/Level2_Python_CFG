@@ -46,7 +46,7 @@ cfg_tweets=twitter_api.search(
 )
 
 for tweet in cfg_tweets:
-  print tweet.user.name + ":" + tweet.text +"\n"
+  print(tweet.user.name + ":" + tweet.text +"\n")
 
 # send_simple_message() #just to call method
 if __name__ == '__main__':
